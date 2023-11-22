@@ -1,0 +1,40 @@
+<div class="about-container">
+    <h2>Sobre Mim</h2>
+  
+    <!-- Carrossel de Fotos -->
+    <div class="foto-carrossel">
+      <img *ngFor="let foto of fotos" src="https://scontent.fmgf12-1.fna.fbcdn.net/v/t1.6435-9/165584399_936138150259494_6996069531827711996_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=dd63ad&_nc_ohc=yRchn7Q_bPEAX99doYM&_nc_ht=scontent.fmgf12-1.fna&oh=00_AfDP0eU6_ll7XpkGrtydMsg7dtlVbeVPQTpAawEuO3mAaQ&oe=65858DB4" alt="Foto" height="200px">
+      <img *ngFor="let foto of fotos" src="https://scontent.fmgf12-1.fna.fbcdn.net/v/t39.30808-6/271490243_1109177952955512_7722831749994968085_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=5f2048&_nc_ohc=c8Rw8xD09O8AX93j3D7&_nc_ht=scontent.fmgf12-1.fna&oh=00_AfCO4Jfaz0WkFvQQzOTjHdk_QMWB4Gnx06JQrVn_Bc2aRw&oe=656321CE" alt="Foto" height="200px">
+      <img *ngFor="let foto of fotos" src="https://scontent.fmgf12-1.fna.fbcdn.net/v/t39.30808-6/317374162_1322653474941291_6920186412059885345_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=5f2048&_nc_ohc=I-dpaIfUXWgAX8uzzcL&_nc_ht=scontent.fmgf12-1.fna&oh=00_AfDw_24jn1TWjNZB9FOU-dBehAun6NpPyWdW1mUxX0BJIg&oe=65637836" alt="Foto" height="200px">
+      <img *ngFor="let foto of fotos" src="https://scontent.fmgf12-1.fna.fbcdn.net/v/t39.30808-6/329794951_593249062273193_1959878671803938359_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=5f2048&_nc_ohc=Edk_nX6BUg0AX-XEll7&_nc_ht=scontent.fmgf12-1.fna&oh=00_AfA0Gj9WOGDt6z1nrHNqUEqdandIUOcOmJm7wkHRZu_8ow&oe=65634252" alt="Foto" height="200px">
+
+    </div>
+  
+    <!-- Retângulo Azul - Informações de Nascimento -->
+    <div class="info-retangulo azul">
+      <p>Cidade de Nascimento: Pitanga {{ cidadeNascimento }}</p>
+      <p>Data de Nascimento: 09/07/2022 {{ dataNascimento }}</p>
+      <p>Idade:  {{ idade }} anos</p>
+    </div>
+  
+    <!-- Retângulo - Sobre o Futuro -->
+    <div class="info-retangulo">
+      <p> {{ futuro }}
+        Espero me formar em Engenharia de Software, e atuar como professor da área de Web na faculdade, além de manter a minha empresa de ecommerce ativa e me tornar um grande empresário
+      </p>
+    </div>
+  
+    <!-- Retângulo - Hobbies -->
+    <div class="info-retangulo">
+      <p>{{ hobbies }} Eu gosto de ler, ouvir música, frequentar a igreja e viajar</p>
+    </div>
+  
+    <!-- Retângulo - Mídias Sociais -->
+    <div class="info-retangulo">
+      <p>Mídias Sociais:</p>
+      <ul>
+        <li *ngFor="let midia of midiasSociais">{{ midia }} Carlos_sCamargo</li>
+      </ul>
+    </div>
+  </div>
+  

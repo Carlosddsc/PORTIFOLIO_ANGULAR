@@ -1,0 +1,13 @@
+.experience-detail-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .experience-info-box {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin: 10px;
+    text-align: center;
+    background-color: #e0f2f1; /* Cor de fundo azul claro */
+  }
